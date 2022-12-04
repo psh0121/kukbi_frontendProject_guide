@@ -91,6 +91,7 @@ a {
 }
 
 .section0-message {
+  opacity: 0;
   font-size: 4.5rem;
   font-weight: bold;
   width: 100%;
