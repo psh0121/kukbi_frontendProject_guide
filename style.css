@@ -12,6 +12,7 @@ html {
     */
   font-size: 14px;
   font-family: 'Noto Sans KR', sans-serif;
+  color: white;
 }
 
 body {
@@ -19,11 +20,29 @@ body {
   overflow-x: hidden;
   /* 글간격(자간)을 5% 좁힌다 */
   letter-spacing: -0.05em;
+  background-color: black;
 }
 
 a {
   /* underline 제거 */
   text-decoration: none;
+  color: white;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 4em;
+  width: 100%;
+  background-color: darkgray;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: black;
 }
 
 .global-nav {
@@ -105,6 +124,44 @@ a {
   display: block;
 }
 
-.scroll-section {
-  border: 1px solid red;
+.section0-canvas {
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  text-align: center;
+  z-index: -5;
+}
+
+.section1-message {
+  max-width: 100%;
+}
+
+.section1-description {
+  font-size: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 3em;
+}
+
+.section1-description>strong {
+  float: left;
+  font-size: 4.5rem;
+}
+
+.local-nav-sticky .local-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  border-bottom: 1px solid gray;
+
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+  -moz-backdrop-filter: saturate(180%) blur(15px);
+  -o-backdrop-filter: saturate(180%) blur(15px);
+  backdrop-filter: saturate(180%) blur(15px);
+}
+
+.local-nav-sticky .local-nav-links {
+  border: none;
 }
